@@ -59,6 +59,13 @@ switch_locale_path(:en)       # current page in another locale (views and contro
 
 Only some locales: `localized(locales: %i[en es]) { ... }`.
 
+## Devise
+
+Use Devise 4.9.4 or newer. Devise then keeps `I18n.locale` when authentication fails, so its
+flash messages use the locale of the URL
+([heartcombo/devise#5567](https://github.com/heartcombo/devise/pull/5567)).
+Older versions show these messages in the default locale.
+
 ## Why not route_translator?
 
 [route_translator](https://github.com/enriclluelles/route_translator) is the mature gem for
