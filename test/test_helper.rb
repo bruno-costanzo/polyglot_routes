@@ -2,7 +2,7 @@
 
 require "rails"
 require "action_controller/railtie"
-require "i18n_routes"
+require "polyglot_routes"
 require "minitest/autorun"
 
 class TestApp < Rails::Application

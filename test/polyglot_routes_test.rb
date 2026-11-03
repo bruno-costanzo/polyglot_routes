@@ -109,7 +109,7 @@ end
 class LoadTest < ActiveSupport::TestCase
   test "the gem loads without Rails" do
     lib = File.expand_path("../lib", __dir__)
-    script = 'require "i18n_routes"; exit(defined?(I18nRoutes::Railtie) ? 1 : 0)'
+    script = 'require "polyglot_routes"; exit(defined?(PolyglotRoutes::Railtie) ? 1 : 0)'
     assert system(RbConfig.ruby, "-I", lib, "-e", script), "Railtie must load only with Rails"
   end
 end

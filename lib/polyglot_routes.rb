@@ -2,12 +2,12 @@
 
 require "i18n"
 require "action_dispatch"
-require "i18n_routes/version"
-require "i18n_routes/mapper"
-require "i18n_routes/controller"
-require "i18n_routes/railtie" if defined?(Rails::Railtie)
+require "polyglot_routes/version"
+require "polyglot_routes/mapper"
+require "polyglot_routes/controller"
+require "polyglot_routes/railtie" if defined?(Rails::Railtie)
 
-module I18nRoutes
+module PolyglotRoutes
   DYNAMIC_SEGMENT = /[:*()]/
 
   module_function

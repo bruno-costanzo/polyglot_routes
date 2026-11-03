@@ -1,11 +1,18 @@
-# i18n_routes
+# polyglot_routes
+
+[![Gem Version](https://img.shields.io/gem/v/polyglot_routes)](https://rubygems.org/gems/polyglot_routes)
+[![CI](https://github.com/bruno-costanzo/polyglot_routes/actions/workflows/ci.yml/badge.svg)](https://github.com/bruno-costanzo/polyglot_routes/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](test)
+[![Ruby](https://img.shields.io/badge/ruby-%3E%3D%203.2-CC342D)](polyglot_routes.gemspec)
+[![Rails](https://img.shields.io/badge/rails-%3E%3D%207.1-D30001)](polyglot_routes.gemspec)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE.txt)
 
 Translated Rails routes for every locale. No setup: you only write routes.
 
 ## Install
 
 ```ruby
-gem "i18n_routes", github: "bruno-costanzo/i18n_routes"
+gem "polyglot_routes"
 ```
 
 ## Use

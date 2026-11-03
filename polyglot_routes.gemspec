@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative "lib/i18n_routes/version"
+require_relative "lib/polyglot_routes/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "i18n_routes"
-  spec.version = I18nRoutes::VERSION
+  spec.name = "polyglot_routes"
+  spec.version = PolyglotRoutes::VERSION
   spec.authors = ["Bruno Costanzo"]
   spec.email = ["dev.bcostanzo@gmail.com"]
   spec.summary = "Translated Rails routes for every locale, with no setup."
   spec.description = "Wrap your routes in `localized` and get one translated route per locale, " \
                      "locale-aware URL helpers and I18n.locale set from the URL."
-  spec.homepage = "https://github.com/bruno-costanzo/i18n_routes"
+  spec.homepage = "https://github.com/bruno-costanzo/polyglot_routes"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2"
 
