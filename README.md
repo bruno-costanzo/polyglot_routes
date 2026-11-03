@@ -59,6 +59,21 @@ switch_locale_path(:en)       # current page in another locale (views and contro
 
 Only some locales: `localized(locales: %i[en es]) { ... }`.
 
+## Why not route_translator?
+
+[route_translator](https://github.com/enriclluelles/route_translator) is the mature gem for
+this job, and it uses the same `localized` block. polyglot_routes is a smaller option:
+
+|                               | polyglot_routes              | route_translator                         |
+|-------------------------------|------------------------------|------------------------------------------|
+| Set `I18n.locale` from the URL | Automatic, in every controller | Add `around_action :set_locale_from_url` |
+| Link to the current page in another locale | `switch_locale_path(:es)`, keeps the query string | `url_for(locale: "es")`, the locale must be a string |
+| Configuration                 | None                         | `force_locale`, `hide_locale`, host-based locales, unlocalized routes and more |
+| Size                          | About 150 lines              | Larger, with years of edge cases fixed   |
+
+Use polyglot_routes when the default behaviour is all you need.
+Use route_translator when you need one of its options.
+
 ## License
 
 MIT
